@@ -1,0 +1,11 @@
+This project uses I2S to communicate from MCU to microphone.
+
+I2S is a continuous serial data stream while active — bits flow one after another in sync with the bit clock.
+
+Bit Clock (BCK) pulses for each bit.
+
+WS flips once per sample to indicate Left or Right channel.
+
+DATA carries bits of the audio sample matching the current WS.
+
+Right and left channels indicate like spatialized sound as is present in headphones
