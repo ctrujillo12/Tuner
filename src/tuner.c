@@ -1,0 +1,1 @@
+// Turn frequency data into musical note info and handle display updates.
