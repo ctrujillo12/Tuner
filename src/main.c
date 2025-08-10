@@ -2,12 +2,14 @@
 #include "freertos/task.h"
 #include "driver/gpio.h"
 #include "driver/i2s.h"
+#include "dsp_processing.h"
 
 #define BLINK_GPIO GPIO_NUM_2  // onboard LED pin
 
 void app_main(void)
 {
     
+    dsp_init();
     esp_rom_gpio_pad_select_gpio(BLINK_GPIO);
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
 
